@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta charset="UTF-8" />
+    <title>CatToon</title>
+  </head>
+  <body>
+    {% extends 'header.html' %} {% block title %} {% endblock %} {% block body%}
+    <div class="content1">
+           <section class="benefits">
+            <div class="benefits__wrap">
+                <h2 class="benefits__title">
+
+                </h2>
+                <div class="benefits__cards">
+                    <div class="benefits__card">
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.7861581270772!2d44.49077847939502!3d48.77062711100144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x411aca146a683c85%3A0xe1fa59b42ded34d6!2z0JrRg9GC0YPQt9C-0LLRgdC60LDRjyDRg9C7LiwgNSwg0JLQvtC70LPQvtCz0YDQsNC0LCDQktC-0LvQs9C-0LPRgNCw0LTRgdC60LDRjyDQvtCx0LsuLCA0MDAwOTQ!5e0!3m2!1sru!2sru!4v1653248495346!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="tour__info">
+                        <p class="tour__desc">
+                          Наш адрес: Кутузовская ул, 5,Волгоград,Волгоградская обл,400094.
+                        </p>
+						 <form class="obratnuj-zvonok" autocomplete="off" action='email.php' method='post'>
+<div class="form-zvonok">
+  <div>
+    <label>Имя <span>*</span></label>
+    <input type='text' name='username' required></div>
+  <div>
+    <label>Номер телефона <span>*</span></label>
+    <input type='text' name='usernumber' required></div>
+  <div>
+    <label>Сообщение</label>
+    <input type='text' name='question'>
+  </div>
+          <a href="" class="floating-button">отправить</a>
+</div>
+</form>
+                    </div>
+                </div>
+            </div>
+           </section>
+    </div>
+
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer_item">
+	<div class="footer_logo">
+	<img src="static/img/logo1.png" alt="" class="footer_logo-pic">
+	</div>
+	<nav class="footer_nav">
+	<ul class="footerm_menu">
+                        <li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Телефон: +7(906)404-22-82</h3>
+                        </li>
+						<li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Почта: CatToon@gmail.com</h3>
+                        </li>
+						<li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Адрес: Кутузовская ул., 5, Волгоград, Волгоградская обл., 400094</h3>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    {% endblock %}
+  </body>
+</html>

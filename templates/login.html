@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="/static/css/login.css" />
+    <meta charset="UTF-8" />
+    <title>CatToon</title>
+  </head>
+  <body>
+    {% extends 'header.html' %} {% block title %} {% endblock %} {% block body%}
+    <form action="action_page.php">
+      <div class="imgcontainer">
+      </div>
+<h1 class="intro__suptitle"></h1>
+      <div class="container">
+        <label for="uname"><b>Имя пользователя</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <a href="" class="floating-button">Зарегестрироваться</a>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Запомнить меня
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Отмена</button>
+        <span class="psw">Забыли <a href="#">Пароль?</a></span>
+      </div>
+    </form>
+
+
+
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="footer_item">
+	<div class="footer_logo">
+	<img src="assets/images/logo1.png" alt="" class="footer_logo-pic">
+	</div>
+	<nav class="footer_nav">
+	<ul class="footerm_menu">
+                        <li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Телефон: +7(906)404-22-82</h3>
+                        </li>
+						<li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Почта: CatToon@gmail.com</h3>
+                        </li>
+						<li class="footer_menu-item">
+                            <h3 class="footer_menu-title">Адрес: Кутузовская ул., 5, Волгоград, Волгоградская обл., 400094</h3>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+    </div>
+</footer>
+
+    {% endblock %}
+  </body>
+</html>
